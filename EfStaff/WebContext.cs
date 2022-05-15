@@ -9,7 +9,7 @@ namespace CanoeSlalomCompetitionsResults.EfStaff
 {
     public class WebContext : DbContext
     {
-        public DbSet<GateBundle> GateBundles { get; set; }
+        public DbSet<GateBundleViewModel> GateBundles { get; set; }
 
         public WebContext(DbContextOptions options) : base(options)
         {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class CompetitionTrack : BaseModel
+    public class CompetitionTrackViewModel
     {
         public string NameOfCompetitionTrack { get; set; }
 

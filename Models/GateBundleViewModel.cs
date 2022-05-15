@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class CompetitionTrack : BaseModel
+    public class GateBundleViewModel
     {
-        public string NameOfCompetitionTrack { get; set; }
-
+        public int BundleNumber { get; set; }      
+        public string PasswordBundl { get; set; } 
     }
 }

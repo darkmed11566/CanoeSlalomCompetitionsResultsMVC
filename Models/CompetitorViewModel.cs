@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class Competitor : BaseModel
+    public class CompetitorViewModel
     {
         public int Number { get; set; }
         public BoatClassCategory BoatClassCategory { get; set; }

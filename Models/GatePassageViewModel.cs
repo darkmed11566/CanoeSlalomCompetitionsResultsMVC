@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class GatePassage:GateViewModel
+    public class GatePassageViewModel
     {
        
         public PenaltyConstans PenaltyInGate { get; set; }

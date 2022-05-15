@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class Competition : BaseModel
+    public class CompetitionViewModel
     {
         public DateTime CompetitionDateStart { get; set; }
         public DateTime CompetitionDateEnd { get; set; }

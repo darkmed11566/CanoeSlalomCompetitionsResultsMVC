@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class Gate : BaseModel
+    public class GateViewModel
     {
         public int NumberOfGate { get; set; }
         public GateTypes GateType { get; set; }
