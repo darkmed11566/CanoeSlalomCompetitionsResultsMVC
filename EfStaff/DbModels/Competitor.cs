@@ -10,10 +10,10 @@ namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
     public class Competitor : BaseModel
     {
         public int Number { get; set; }
-        public virtual BoatClassCategory BoatClassCategory { get; set; }
+        public BoatClassCategory BoatClassCategory { get; set; }
         public virtual Sportsman Id { get; set; }
-        public virtual StatusSportsmanInTrackEnums Status { get; set; }
-        public virtual 
+        public StatusSportsmanInTrackEnums Status { get; set; }
+         
 
     }
 }

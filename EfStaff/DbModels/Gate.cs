@@ -9,8 +9,7 @@ namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
     public class Gate : BaseModel
     {
         public GateTypes GateType { get; set; }
-        public virtual GateBundle Bundle { get; set; }
-        
+        public virtual GateBundle Bundle { get; set; }        
 
     }
 }

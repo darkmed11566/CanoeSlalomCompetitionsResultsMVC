@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
-    public class GateWithPenalty:Gate
+    public class GatePassage:Gate
     {
-        public int GateNumber { get; set; }
+        public virtual Gate Id { get; set;}
         public PenaltyConstans PenaltyInGate { get; set; }
+        public DateTime GatePassageTime { get; set; }
     }
 }
