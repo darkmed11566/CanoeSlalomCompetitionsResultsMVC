@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.Servise.EnamsAndConstans
 {
-    public enum GateTypes
+    public enum ListOfCountries
     {
-        StartingGate = 1,
-        FinisGate = 2,
-        TimeGate = 3,
-        StraightGate = 4,
-        BackGate = 5
+        BLR = 1,
+        RUS = 2,
+        LTU = 3,
+        LAT = 4
     }
 }

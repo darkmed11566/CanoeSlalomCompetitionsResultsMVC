@@ -1,0 +1,37 @@
+﻿@model CompetitionViewModel
+@using CanoeSlalomCompetitionsResults.Servise.EnamsAndConstans
+
+    <div class="text-center">
+        <h3>Add Competition</h3>
+        <div class="row">
+            <div class="col">
+                <input class=" form-control" placeholder="Conpetition Name"/>
+                <input class=" form-control" type="date" placeholder="Competition Start Data"/>
+                <input class=" form-control" type="date" placeholder="Competition End Data"/>
+                <input class=" form-control" type="checkbox"/>
+
+                <select class=" form-control" name="Country">
+                    @foreach (var country in Enum.GetValues(typeof(ListOfCountries)))
+                    {
+                        <option value="@country">
+                            @country;
+                        </option>
+                    }
+                </select>
+
+                <select class=" form-control" name="Type">
+                    @foreach (var type in Enum.GetValues(typeof(CompetitionType)))
+                    {
+                        <option value="@type">
+                            @type;
+                        </option>
+                    }
+                </select>
+
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+
+            </div>
+        </div>
+</div>

@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.Servise.EnamsAndConstans
 {
-    public enum GateTypes
+    public enum TrackType
     {
-        StartingGate = 1,
-        FinisGate = 2,
-        TimeGate = 3,
-        StraightGate = 4,
-        BackGate = 5
+        QualificationRun1 = 1,
+        QualificationRun2 = 2,
+        Run1 = 3,
+        Run2 = 4,
+        SemiFinal = 5,
+        Final = 6
     }
 }

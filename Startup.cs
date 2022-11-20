@@ -16,8 +16,7 @@ namespace CanoeSlalomCompetitionsResults
 {
     public class Startup
     {
-        public const string AuthCoockieName = "Smile";
-
+      
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,15 +29,7 @@ namespace CanoeSlalomCompetitionsResults
         {
             var connectString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CanoeSlalomCompetitionsResults;Integrated Security=True;";
             services.AddDbContext<WebContext>(x => x.UseSqlServer(connectString));
-
-            services.AddAuthentication(AuthCoockieName)
-                 .AddCookie(AuthCoockieName, config =>
-                 {
-                     config.LoginPath = "/User/Login";
-                     config.AccessDeniedPath = "/User/AccessDenied";
-                     config.Cookie.Name = "AuthSweet";
-                 });
-
+           
             RegisterMapper(services);
 
             services.AddControllersWithViews();

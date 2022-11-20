@@ -7,8 +7,8 @@ namespace CanoeSlalomCompetitionsResults.Servise.Enams
 {
     public class PenaltyConstans
     {
-        public const int Clear = 0;
-        public const int Penalty1 = 2;
-        public const int Penalty2 = 50;
+        public const int CleanPassage = 0;
+        public const int PassageWichTouch = 2;
+        public const int WrongPassageOrSkip = 50;
     }
 }

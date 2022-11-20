@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace CanoeSlalomCompetitionsResults.Servise.EnamsAndConstans
 {
-    public enum Country
+    public enum CompetitionStatus
     {
-        BLR = 1,
-        RUS = 2,
-        LTU = 3,
-        LAT = 4
+        Planned = 1,
+        Live = 2,
+        Completed = 3
     }
 }

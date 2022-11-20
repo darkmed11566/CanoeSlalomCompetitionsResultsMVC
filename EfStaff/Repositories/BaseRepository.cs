@@ -67,15 +67,6 @@ namespace CanoeSlalomCompetitionsResults.EfStaff.Repositories
             }
 
             _webContext.SaveChanges();
-        }
-
-        public virtual int Count(bool getRemovedRecord = false)
-            => _dbSet.Count(x => x.IsActive || getRemovedRecord);
-
-        public List<Template> GetForPagination(int perPage, int page)
-            => _dbSet
-            .Skip((page - 1) * perPage)
-            .Take(perPage)
-            .ToList();
+        }        
     }
 }

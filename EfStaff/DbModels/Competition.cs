@@ -9,12 +9,12 @@ namespace CanoeSlalomCompetitionsResults.EfStaff.DbModels
 {
     public class Competition : BaseModel
     {
-        public DateTime CompetitionDateStart { get; set; }
-        public DateTime CompetitionDateEnd { get; set; }
         public string CompetitionName { get; set; }
-        public bool CompetitionRating { get; set; }
+        public DateTime CompetitionStartData { get; set; }
+        public DateTime CompetitionEndtData { get; set; }
+        public bool Rating { get; set; }
         public CompetitionType Type { get; set; }
-        public Country CountryOfCompetition { get; set; }
-
+        public ListOfCountries Country { get; set; }
+        public CompetitionStatus Status { get; set; }
     }
 }
